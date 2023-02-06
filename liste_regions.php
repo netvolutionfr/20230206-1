@@ -1,6 +1,5 @@
 <?php
 require_once 'db.php';
-require_once 'Region.php';
 
 // Récupération des régions
 if (isset($db)) {

@@ -1,7 +1,5 @@
 <?php
 require_once 'db.php';
-require_once 'Region.php';
-require_once 'Department.php';
 
 if (isset($_GET['code_region'])) {
     $code_region = $_GET['code_region'];
@@ -13,7 +11,7 @@ if (isset($_GET['code_region'])) {
         echo '<h1>' . $region->name . '</h1>';
         $departements = $region->getDepartments();
         foreach ($departements as $departement) {
-            echo $departement->name . '<br>';
+            echo '<a href="detail_department.php?code_department=' . $departement->code . '">' . $departement->name . '</a><br>';
         }
     }
 }

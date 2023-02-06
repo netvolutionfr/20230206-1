@@ -1,4 +1,8 @@
 <?php
+require_once 'Department.php';
+require_once 'Region.php';
+require_once 'City.php';
+
 const DB_HOST = 'localhost';
 const DB_NAME = '20230206-1';
 const DB_USER = 'root';

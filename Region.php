@@ -1,6 +1,5 @@
 <?php
 require_once 'db.php';
-require 'Department.php';
 
 class Region
 {

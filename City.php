@@ -3,8 +3,8 @@
 class City
 {
     public int $id;
-    public string $insee_code;
-    public string $zip_code;
+    public string|null $insee_code;
+    public string|null $zip_code;
     public string $name;
     public string $slug;
     public float $gps_lat;
