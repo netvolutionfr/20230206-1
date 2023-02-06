@@ -15,7 +15,7 @@ if (isset($_GET['code_department'])) {
 
         $cities = $departement->getCities();
         foreach ($cities as $city) {
-            echo $city->zip_code . " - " . $city->name . '<br>';
+            echo $city->zip_code . " - " . $city->insee_code . " - " . $city->name . '<br>';
         }
     }
 }
